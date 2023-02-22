@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.pm161998.jeephysics" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcheratom1" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcheratom1_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.pm161998.jeephysics.Onboarding_screen"/>
+        <activity android:name="com.pm161998.jeephysics.Loading_screen"/>
+        <activity android:name="com.pm161998.jeephysics.no_internet_connection2"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs7"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs6"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs5"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs4"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs3"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs2"/>
+        <activity android:name="com.pm161998.jeephysics.paidpdfs"/>
+        <activity android:name="com.pm161998.jeephysics.Questions_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.Questions_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.Flt_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.Flt_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.MockTest_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.MockTest_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.PhysicsTest_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.PhysicsTest_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.Books_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.CheatBook_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.formula_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.Books_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.CheatBook_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.Formula_view_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.Syllabus_pdf_opener"/>
+        <activity android:name="com.pm161998.jeephysics.Syllabus_View_pdf_files"/>
+        <activity android:name="com.pm161998.jeephysics.Dashboard"/>
+        <activity android:name="com.pm161998.jeephysics.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value=""/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="" android:initOrder="100"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>
